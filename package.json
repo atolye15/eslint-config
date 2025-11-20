@@ -1,0 +1,61 @@
+{
+  "name": "@atolye15/eslint-config",
+  "version": "2.0.0",
+  "description": "Atolye15 shareable config for ESLint.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/atolye15/eslint-config.git"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./jest": "./jest.js",
+    "./storybook": "./storybook.js",
+    "./react": "./react.js",
+    "./node": "./node.js",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0",
+    "jest": "^30.2.0",
+    "prettier": "^3.6.2",
+    "storybook": "^10.0.0",
+    "typescript": "^5.9.3"
+  },
+  "peerDependenciesMeta": {
+    "jest": {
+      "optional": true
+    },
+    "storybook": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.6.0",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.8.0",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jest": "^29.14.0",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.23.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-storybook": "^10.2.8",
+    "eslint-plugin-testing-library": "^7.15.4",
+    "typescript-eslint": "^8.55.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.0",
+    "jest": "^30.2.0",
+    "prettier": "^3.8.1",
+    "storybook": "^10.2.8",
+    "typescript": "^5.9.3"
+  }
+}
