@@ -6,7 +6,7 @@ Comprehensive ESLint configuration with built-in support for TypeScript, React, 
 
 ## Available Presets
 
-- **`base`**: Core ESLint rules with TypeScript support, import management, stylistic rules, and Prettier integration
+- **`base`**: Core ESLint rules with TypeScript support, import management, and Prettier integration
 - **`react`**: React, JSX a11y, React Hooks, Testing Library, plus Jest and Storybook configurations
 - **`jest`**: Jest-specific rules for test files
 - **`node`**: Node.js-specific rules and best practices

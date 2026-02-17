@@ -4,10 +4,6 @@ export default {
     // https://eslint.org/docs/rules/array-callback-return
     'array-callback-return': ['error', { allowImplicit: true }],
 
-    // Treat var statements as if they were block scoped
-    // https://eslint.org/docs/rules/block-scoped-var
-    'block-scoped-var': 'error',
-
     // Specify curly brace conventions for all control statements
     // https://eslint.org/docs/rules/curly
     curly: ['error', 'multi-line'], // multiline
@@ -38,8 +34,7 @@ export default {
 
     // Disallow the use of alert, confirm, and prompt
     // https://eslint.org/docs/rules/no-alert
-    // TODO: enable, semver-major
-    'no-alert': 'warn',
+    'no-alert': 'error',
 
     // Disallow use of arguments.caller or arguments.callee
     // https://eslint.org/docs/rules/no-caller
@@ -227,10 +222,6 @@ export default {
     // Require use of the second argument for parseInt()
     // https://eslint.org/docs/rules/radix
     radix: 'error',
-
-    // Requires to declare all vars on top of their containing scope
-    // https://eslint.org/docs/rules/vars-on-top
-    'vars-on-top': 'error',
 
     // Require or disallow Yoda conditions
     // https://eslint.org/docs/rules/yoda

@@ -1,6 +1,5 @@
 import commentsConfigs from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import js from '@eslint/js';
-import stylistic from '@stylistic/eslint-plugin';
 import importPlugin from 'eslint-plugin-import';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import { defineConfig } from 'eslint/config';
@@ -20,7 +19,6 @@ export default defineConfig(
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.typescript,
   commentsConfigs.recommended,
-  stylistic.configs['recommended'],
   eslintPluginPrettierRecommended,
   imports,
   bestPractices,
