@@ -15,6 +15,7 @@
     "./jest": "./jest.js",
     "./storybook": "./storybook.js",
     "./react": "./react.js",
+    "./next": "./next.js",
     "./node": "./node.js",
     "./vitest": "./vitest.js",
     "./package.json": "./package.json"
@@ -37,6 +38,7 @@
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.6.0",
     "@vitest/eslint-plugin": "^1.6.0",
+    "@next/eslint-plugin-next": "^15.3.3",
     "@eslint/js": "^10.0.1",
     "confusing-browser-globals": "^1.0.11",
     "eslint-config-prettier": "^10.1.8",
