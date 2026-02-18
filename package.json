@@ -16,6 +16,7 @@
     "./storybook": "./storybook.js",
     "./react": "./react.js",
     "./node": "./node.js",
+    "./vitest": "./vitest.js",
     "./package.json": "./package.json"
   },
   "peerDependencies": {
@@ -35,6 +36,7 @@
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.6.0",
+    "@vitest/eslint-plugin": "^1.6.0",
     "@eslint/js": "^10.0.1",
     "confusing-browser-globals": "^1.0.11",
     "eslint-config-prettier": "^10.1.8",
