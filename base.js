@@ -13,7 +13,7 @@ import strict from './rules/strict.js';
 import style from './rules/style.js';
 import typescript from './rules/typescript.js';
 
-export default defineConfig(
+export default defineConfig([
   js.configs.recommended,
   tseslint.configs.recommended,
   importPlugin.flatConfigs.recommended,
@@ -27,4 +27,4 @@ export default defineConfig(
   strict,
   style,
   typescript,
-);
+]);
