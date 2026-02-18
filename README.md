@@ -2,12 +2,12 @@
 
 Atolye15 shareable config for ESLint.
 
-Comprehensive ESLint configuration with built-in support for TypeScript, React, Jest, Vitest, Storybook, and Node.js. Includes automatic code formatting with Prettier and best practices for modern JavaScript/TypeScript development.
+Comprehensive ESLint configuration with built-in support for TypeScript, React, Storybook, and Node.js. Includes optional presets for Jest and Vitest, automatic code formatting with Prettier, and best practices for modern JavaScript/TypeScript development.
 
 ## Available Presets
 
 - **`base`**: Core ESLint rules with TypeScript support, import management, and Prettier integration
-- **`react`**: React, JSX a11y, React Hooks, Testing Library, plus Jest and Storybook configurations
+- **`react`**: React, JSX a11y, React Hooks, Testing Library, and Storybook configurations
 - **`jest`**: Jest-specific rules for test files
 - **`vitest`**: Vitest-specific rules for test files (alternative to Jest preset)
 - **`node`**: Node.js-specific rules and best practices
@@ -37,17 +37,23 @@ import config from '@atolye15/eslint-config';
 // Use a single preset
 export default [...config.react];
 
-// Or combine multiple presets
+// Add a testing preset (Jest or Vitest)
+export default [
+  ...config.react,
+  ...config.jest,
+];
+
+// Or with Vitest
+export default [
+  ...config.react,
+  ...config.vitest,
+];
+
+// Combine multiple presets
 export default [
   ...config.base,
   ...config.jest,
   // Add your custom rules...
-];
-
-// For Vitest users (use vitest instead of jest)
-export default [
-  ...config.base,
-  ...config.vitest,
 ];
 ```
 

@@ -2,11 +2,9 @@ import nodePlugin from 'eslint-plugin-n';
 import { defineConfig } from 'eslint/config';
 
 import baseConfig from './base.js';
-import jestConfig from './jest.js';
 
 export default defineConfig([
   baseConfig,
-  jestConfig,
   nodePlugin.configs['flat/recommended'],
   {
     rules: {

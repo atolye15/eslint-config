@@ -4,7 +4,6 @@ import testingLibrary from 'eslint-plugin-testing-library';
 import { defineConfig } from 'eslint/config';
 
 import baseConfig from './base.js';
-import jestConfig from './jest.js';
 import storybookConfig from './storybook.js';
 
 import reactA11y from './rules/react-a11y.js';
@@ -37,7 +36,6 @@ export default defineConfig([
   reactA11y,
   reactHooks,
   storybookConfig,
-  jestConfig,
   {
     files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     settings: {
